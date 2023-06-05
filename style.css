@@ -1,0 +1,118 @@
+* {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.1s ease-in;
+}
+
+.container {
+    background-image: linear-gradient(to right, #4b0745, #7e09b4, rgb(233, 37, 233), #1436c9, #57054c);
+    padding: 25px 20px 25px 30px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #020202;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 50px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    box-shadow: 0 7px 13px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #ebdae5;
+    text-align: center;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.box img {
+    height: 70px;
+}
+
+.box h3 {
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.box p {
+    color: #777;
+    font-size: 15px;
+}
+
+.box .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #310222;
+    color: #fff; 
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-transform: uppercase;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+ 
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px 20x 70px 20px;
+      }
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box {
+        padding: 20px 10px;
+          }    }
+ @media (min-width: 481px) and (max-width: 768px) {
+    html{
+        font-size: 11px;
+    }
+    .container {
+        padding: 10px 20x 60px 20px;
+      }
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box {
+        padding: 17px 10px;
+          }    }
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS styles for mobile devices */
+  html {
+    font-size: 8px;
+  }
+  .container {
+    padding: 10px 20px 50px 20px;
+  }
+  .box-container {
+    grid-template-columns: 1fr;
+  }
+  .box {
+    padding: 15px 5px;
+  }
+}
